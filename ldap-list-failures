@@ -1,0 +1,18 @@
+#!/bin/sh
+
+if [ "$USER" != 'root' ]; then
+    echo 'You must be root to run this script.'
+fi
+
+slapcat | sed -n '
+  /^dn: /h         # new record: we reset the hold buffer
+  /^pwdFailure/H   # we add all pwdFailure lines
+  /^$/ {           # when we finish the current record ...
+    x              
+    /pwdFailure/ { # if the hold buffer contains
+      p            # pwdFailure, we print the hold buffer
+      x            # we print the blank line
+      p
+    }
+  }
+'
