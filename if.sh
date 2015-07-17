@@ -1,14 +1,16 @@
 #!/usr/bin/env bash
-# Example if statements
 
+echo Just an if
+if true; then
+	echo it was true
+fi
+
+# Example if statements
+echo if with multiple branches and a default
 if false; then
 	echo "C'etais true"
-else if grep john1231231231231 /etc/passwd ; then
-	echo Grep found something
+elif grep john /etc/passwd &>/dev/null; then
+	echo grep found something
 else
 	echo "C'etais pas true"
 fi
-
-#for i in {1..100..2}; do
-#	echo $i
-#done

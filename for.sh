@@ -2,6 +2,11 @@
 # Example for loop
 
 echo 'Entering Loop!'
-for FILE in file{1..10}; do
-	echo "The current file in the loop is: $FILE"
+for f in file{1..5}; do
+	echo "Current file: $f"
+done
+
+# same thing in a C-style for-loop syntax
+for ((f=1; f<6; f++)); do
+	echo "Current file: file$f"
 done

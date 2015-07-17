@@ -3,7 +3,7 @@
 
 language=$1
 
-case $language in 
+case $language in
 en|english|55) echo "Hello World" ;;
 fr) echo "Allo Monde" ;;
 es) echo "Hola Mundo" ;;
