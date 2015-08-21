@@ -1,2 +1,2 @@
 # shell-examples
-Little shell scripting examples
+Little BASH shell scripting examples
