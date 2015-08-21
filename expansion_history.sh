@@ -2,7 +2,7 @@
 # Examples of history expansion usage.
 # See bash(1)/HISTORY EXPANSION
 
-source _vendor/bash_colors.sh
+source _vendor/bash_colors/bash_colors.sh
 
 # These options are needed to manually enable
 # history expansion for a non-interactive session
