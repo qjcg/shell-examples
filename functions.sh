@@ -17,3 +17,12 @@ hello1 Jerome
 hello2 Elvis
 hello2 Douglas
 hello2 Wenceslas
+
+# functions must be defined BEFORE they're called
+# --> this will result in an error
+f3
+
+f3() {
+	echo This is f3
+}
+
