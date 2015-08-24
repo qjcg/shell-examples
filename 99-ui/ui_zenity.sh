@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 # zenity(1) user interface demo
 
+# ignore stderr (filled with irrelevant messages)
+exec 2>/dev/null
+
 # assign user input to variables like this:
 color=$(zenity --color-selection)
 password=$(zenity --password)
@@ -20,3 +23,5 @@ zenity --text-info < /etc/passwd
 zenity --warning
 zenity --scale
 zenity --file-selection --title "A really great title" --text "What is this???"
+
+# redirect stderr of all this to /dev/null to avoid irrelevant error messages

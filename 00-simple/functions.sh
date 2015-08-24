@@ -18,8 +18,10 @@ hello2 Elvis
 hello2 Douglas
 hello2 Wenceslas
 
-# functions must be defined BEFORE they're called
-# --> this will result in an error
+echo
+echo "Functions must be defined BEFORE they're called."
+echo "Here, calling the function f3 BEFORE it's defined will result in an error:"
+
 f3
 
 f3() {
