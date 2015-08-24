@@ -1,5 +1,5 @@
 #!/bin/bash
-# Example demonstrating the use of 
+# Example demonstrating the use of assert.sh for unit testing.
 
 source ../_vendor/assert.sh/assert.sh
 
