@@ -10,9 +10,9 @@ hello2() {
 	echo Hello $1
 }
 
-hello1 John
+hello1 Jerry
 hello1 Jack
-hello1 Jerome
+hello1 Jimmy
 
 hello2 Elvis
 hello2 Douglas

@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 # kdialog user interface demo (for use with KDE)
 
+exec 2> /dev/null
+
 # see kdialog --help for options
 
 kdialog --yesno 'Are you sure?'

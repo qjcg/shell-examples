@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Demonstrates a basic use case for the shift keyword
 
-# store a first positional parameter in a variable
+# store first positional parameter in a variable
 direction=$1
 shift
 

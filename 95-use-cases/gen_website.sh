@@ -1,6 +1,5 @@
 #!/bin/bash
 # Generate a simple directory structure for a website
-# © John Gosset 2015
 
 domain_name=${1:?Must provide a domain name.}
 

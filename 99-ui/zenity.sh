@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # zenity(1) user interface demo
 
-# ignore stderr (filled with irrelevant messages)
+# ignore stderr
 exec 2>/dev/null
 
 # assign user input to variables like this:

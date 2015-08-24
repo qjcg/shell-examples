@@ -1,5 +1,5 @@
 #!/bin/bash
 # Demonstrate the use of default values.
 
-NAME=${1:-John}
+NAME=${1:-Joan}
 echo $NAME

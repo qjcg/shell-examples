@@ -3,5 +3,5 @@
 
 # infinite loop
 until ! date; do
-	sleep 2
+	sleep 1
 done

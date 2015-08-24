@@ -1,7 +1,7 @@
 #!/bin/bash
 # Demonstrate bash scopes.
 
-INSTRUCTOR='John'
+INSTRUCTOR='Jerry'
 
 # we have access to the global scope in a function
 get_instructor1() {
