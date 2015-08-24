@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 # Examples of brace expansion
 
+echo "Comma separated values are expanded with a space separating each one:"
+echo Hello{aaa,bbb,ccc,ferrari}
+
 echo "The numbers from one to ten via brace expansion:"
 echo {1..10}
 
