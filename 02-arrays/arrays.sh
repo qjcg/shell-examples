@@ -1,7 +1,7 @@
 #!/bin/bash
-# Demonstrate the use of arrays.
+# Demonstrate the use of Bash arrays.
 
-my_array=(aaa bbb ccc ddd 'John Gosset')
+my_array=(aaa bbb ccc ddd 'Jerry Q. Hacker')
 echo 'Array position 0:' ${my_array[0]}
 echo 'Array position 1:' ${my_array[1]}
 echo 'Array position 2:' ${my_array[2]}

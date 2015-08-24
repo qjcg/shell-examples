@@ -1,11 +1,9 @@
 #!/bin/bash
-# Inspecting values in a loop.
+# Trivial loop for inspection via bashdb.
 
-# turn on "debug mode"
-set -x
+[[ $(which bashdb) ]] || { echo Please install bashdb. ; exit 1; }
 
 x=0
 for _ in {1..10}; do
 	(( x++ ))
-	#echo "The current number is $n"
 done

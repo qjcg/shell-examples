@@ -8,6 +8,6 @@ greet() {
 }
 
 assert "greet" "hello"
-assert "greet jack" "hello jack"
-assert "greet jack" "HELLO JERRY"
+assert "greet Jerry" "hello Jerry"
+assert "greet June" "HELLO JERRY"
 assert_end greet_function

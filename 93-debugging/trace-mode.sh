@@ -1,7 +1,7 @@
 #!/bin/bash
 # Demonstrating the usefulness of "set -x" for debugging.
 
-# uncomment to turn on "debugging mode"
+# enable "trace mode"
 set -x
 
 NAME='Jerry Q. Hacker'
