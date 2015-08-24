@@ -10,3 +10,7 @@ awk -F: '/root/ {print $3, $5}' /etc/passwd
 
 # same thing, reverse order
 awk -F: '/root|nobody/ {print $5, $3}' /etc/passwd
+
+# multiple awk commands in a block, separated by semicolons
+# the gsub built-in awk function makes a global substitution on a line
+awk -F: '/root|nobody/ {gsub("root", "ROOT"); print $5, $3, $1 }' /etc/passwd
