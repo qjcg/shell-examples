@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Print /etc/passwd with nice columnar output
 
 column -t -s ':' /etc/passwd

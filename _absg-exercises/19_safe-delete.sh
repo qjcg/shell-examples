@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Safely delete files
 
 FILES=$*
