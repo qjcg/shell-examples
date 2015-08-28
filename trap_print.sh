@@ -2,6 +2,8 @@
 # Example of using the trap builtin command.
 
 trap myfunc INT
+trap date USR1
+trap uptime USR2
 
 echo printing traps:
 trap -p
@@ -10,5 +12,6 @@ myfunc() {
 	printf "\nDeath by SIGINT (CTRL-c)!\n"
 }
 
-echo 'Time for a nap! A SIGINT would kill me right about now...'
-sleep 999999999
+while true; do
+	true
+done
