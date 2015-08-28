@@ -1,16 +1,8 @@
 #!/usr/bin/env bash
-# Example if statements
+# Example if statement
 
-echo Just an if
-if true; then
-	echo it was true
-fi
+n=7
 
-echo if with multiple branches and a default
-if false; then
-	echo "This will never execute"
-elif grep root /etc/passwd &>/dev/null; then
-	echo grep found something
-else
-	echo "Nothing true"
+if [[ $n -eq 7 ]]; then
+	echo "Variable n has value 7"
 fi
