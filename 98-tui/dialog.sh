@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 # dialog(1) user interface demo
 
+[[ $(which dialog) ]] || { echo "Please install dialog." ; exit 1; }
+
 name=$(dialog --stdout --inputbox 'Please enter your name' 0 0)
 email=$(dialog --stdout --inputbox 'Please enter your email address' 0 0)
 birthday=$(dialog --stdout --calendar 'Please enter your birthday' 0 0 17 08 1982)

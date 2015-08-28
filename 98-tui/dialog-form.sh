@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 # dialog(1) user interface demo (form widget)
 
+[[ $(which dialog) ]] || { echo "Please install dialog." ; exit 1; }
+
 # user input will be stored in the form_data array
 form_data=( "$(dialog --stdout --backtitle 'User Information' --title 'Info' --ok-label 'Submit' \
 	--form 'Please tell us about yourself!' 0 50 0 \
