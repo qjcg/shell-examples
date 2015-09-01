@@ -9,5 +9,5 @@ greet() {
 
 assert "greet" "hello"
 assert "greet Jerry" "hello Jerry"
-assert "greet June" "HELLO JERRY"
+assert "greet June" "HELLO JERRY" # this fails
 assert_end greet_function
