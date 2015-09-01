@@ -1,14 +1,6 @@
 #!/usr/bin/env bash
 # Example of using the trap builtin command.
 
-trap myfunc INT
-
-echo printing traps:
-trap -p
-
-myfunc() {
-	printf "\nDeath by SIGINT (CTRL-c)!\n"
-}
-
-echo 'Time for a nap! A SIGINT would kill me right about now...'
+trap date INT
+echo "Time for a nap! A SIGINT would kill me right about now..."
 sleep 999999999
