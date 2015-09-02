@@ -4,22 +4,15 @@
 source greetlib
 
 @test "greet with no arguments" {
-	result="$(greet)"
-	[[ "$result" == "hello" ]]
+	[[ "$(greet)" == "hello" ]]
 }
 
 @test "greet with one argument" {
-	result="$(greet John)"
-	[[ "$result" == "hello John" ]]
-
-	result="$(greet Jerry)"
-	[[ "$result" == "hello Jerry" ]]
-
-	result="$(greet '1 2 3')"
-	[[ "$result" == "hello 1 2 3" ]]
+	[[ "$(greet John)" == "hello John" ]]
+	[[ "$(greet Jerry)" == "hello Jerry" ]]
+	[[ "$(greet '1 2 3')" == "hello 1 2 3" ]]
 }
 
 @test "greet with two or more arguments" {
-	result="$(greet 1 2 3)"
-	[[ "$result" == "hello 1" ]]
+	[[ "$(greet 1 2 3)" == "hello 1" ]]
 }
