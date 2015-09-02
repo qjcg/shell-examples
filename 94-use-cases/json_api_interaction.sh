@@ -4,5 +4,7 @@
 hash jq 2>/dev/null || { >&2 echo "jq must be installed: https://stedolan.github.io/jq/" ; exit 1; }
 
 # Sending a GET returns 10 random Wikipedia articles (JSON)
+# For API documentation, see https://www.mediawiki.org/wiki/API:Main_page
+# To experiement with building queries, see https://en.wikipedia.org/wiki/Special:ApiSandbox
 url='https://en.wikipedia.org/w/api.php?action=query&list=random&rnlimit=10&rnnamespace=0&format=json'
 curl -s $url | jq -r '.query .random [] .title'
