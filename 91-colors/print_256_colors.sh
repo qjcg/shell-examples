@@ -11,7 +11,7 @@ print_256_colors() {
 	for i in {0..255}; do
 		# wrap row at $ncpr
 		[[ $col_idx -eq $ncpr ]] && echo && col_idx=0
-		printf "$fmtstr" "${i}" "${i}" "${testchar}"
+		printf "$fmtstr" "$i" "$i" "$testchar"
 		(( col_idx++ ))
 	done
 	echo
