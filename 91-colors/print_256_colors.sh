@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-# Print 
+# Print 256 colors (on supporting terminals)
+# See https://en.wikipedia.org/wiki/ANSI_escape_code#Colors
 
 print_256_colors() { 
 	# colors  per row
