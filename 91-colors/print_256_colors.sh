@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Print 
+
+print_256_colors() { 
+	# colors  per row
+	local ncpr=${1:-12}
+	local testchar=${2:-▮}
+	local col_idx=0
+	local fmtstr="\033[38;05;%dm%3d%s\033[m "
+	for i in {0..255}; do
+		# wrap row at $ncpr
+		[[ $col_idx -eq $ncpr ]] && echo && col_idx=0
+		printf "$fmtstr" "${i}" "${i}" "${testchar}"
+		(( col_idx++ ))
+	done
+	echo
+}
+
+[[ ${BASH_SOURCE[0]} = $0 ]] && print_256_colors "$@"
