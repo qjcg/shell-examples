@@ -3,9 +3,7 @@
 
 source ../_vendor/assert.sh/assert.sh
 
-greet() {
-	echo hello $1
-}
+source greetlib
 
 assert "greet" "hello"
 assert "greet Jerry" "hello Jerry"

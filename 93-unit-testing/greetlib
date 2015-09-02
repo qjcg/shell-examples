@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# A simple Bash function to write unit tests for.
+
+greet() {
+	echo hello $1
+}
