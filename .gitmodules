@@ -1,6 +1,0 @@
-[submodule "_vendor/bash_colors"]
-	path = _vendor/bash_colors
-	url = git@github.com:maxtsepkov/bash_colors
-[submodule "_vendor/assert.sh"]
-	path = _vendor/assert.sh
-	url = https://github.com/lehmannro/assert.sh.git
