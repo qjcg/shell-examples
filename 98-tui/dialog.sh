@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # dialog(1) user interface demo
 
-[[ $(which dialog) ]] || { echo "Please install dialog." ; exit 1; }
+hash dialog 2>/dev/null || { >&2 echo "dialog must be installed" ; exit 1; }
 
 name=$(dialog --stdout --inputbox 'Please enter your name' 0 0)
 email=$(dialog --stdout --inputbox 'Please enter your email address' 0 0)
