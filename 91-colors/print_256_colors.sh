@@ -3,7 +3,7 @@
 # See https://en.wikipedia.org/wiki/ANSI_escape_code#Colors
 
 print_256_colors() { 
-	# colors  per row
+	# colors per row
 	local ncpr=${1:-12}
 	local testchar=${2:-▮}
 	local col_idx=0
