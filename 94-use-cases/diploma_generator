@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Generate a training diploma
+
+convert -background white -size 1366x768 \
+-gravity Center \
+-family "Linux Libertine" \
+-weight 700 -pointsize 200 -kerning 10 \
+caption:"$1" \
+diploma.png
