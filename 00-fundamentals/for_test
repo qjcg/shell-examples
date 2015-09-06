@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Unit tests
+
+source ../_vendor/assert.sh/assert.sh
+
+cmd=./for
+assert "$cmd" "file1\nfile2\nfile3\n"
+assert_end "for"

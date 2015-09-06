@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Show the difference between "$*" and "$@" in a for loop
+
+[[ $# -lt 2 ]] && { >&2 echo Pass 2 or more arguments to this script. ; exit 1 ; }
+
+# 'double quoted "$*": considered "one big argument" during loop'
+for i in "$*"; do
+	echo "$i"
+done
+
+echo
+echo 'double quoted "$@": considered separate arguments during loop'
+for j in "$@"; do
+	echo "$j"
+done

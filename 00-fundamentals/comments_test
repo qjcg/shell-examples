@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Unit tests
+
+source ../_vendor/assert.sh/assert.sh
+
+cmd=./comments
+assert "$cmd" "hello world"
+assert "$cmd 1 2 3" "hello world"
+assert_end "comments"

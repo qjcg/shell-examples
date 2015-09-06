@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Unit tests
+
+source ../_vendor/assert.sh/assert.sh
+
+cmd=./case
+assert "$cmd en" "Hello World"
+assert "$cmd english" "Hello World"
+assert "$cmd 55" "Hello World"
+assert "$cmd fr" "Allo Monde"
+assert "$cmd es" "Hola Mundo"
+assert "$cmd" "I don't understand you..."
+assert "$cmd something arbitrary" "I don't understand you..."
+assert "$cmd" "I don't understand you..."
+assert_end "case"
