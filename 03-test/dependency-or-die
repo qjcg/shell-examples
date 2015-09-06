@@ -7,7 +7,7 @@
 
 PATH=$PATH hash date 2>/dev/null || {
 	# echo to stderr
-	>&2 echo "Looks like you're running a system without the date command. Lucky you!"
+	>&2 echo "The date command was not found. Lucky you!"
 	exit 1
 }
 
