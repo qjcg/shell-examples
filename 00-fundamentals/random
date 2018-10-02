@@ -2,7 +2,6 @@
 
 low=10
 high=20
-n=$RANDOM
 
 # display a random integer <= 20
 echo $(( r %= 20 ))
