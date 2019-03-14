@@ -17,5 +17,5 @@ echo "My PID is: $$"
 echo "Try sending me a signal! (eg: kill -USR1 $$ )"
 
 while true; do
-	sleep 0.5
+	true
 done
