@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Example script that performs actions based on single character input.
+# Example script that INTERACTIVELY performs actions based on single character input.
 
 # REACTIVATE display of input characters and exit.
 trap "stty echo; exit 0" QUIT
