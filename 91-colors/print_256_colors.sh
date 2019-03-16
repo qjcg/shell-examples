@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Print 256 colors (on supporting terminals)
+# Print 256 colors (on supporting terminals).
 # See https://en.wikipedia.org/wiki/ANSI_escape_code#Colors
 
 print_256_colors() { 
@@ -17,4 +17,6 @@ print_256_colors() {
 	echo
 }
 
-[[ ${BASH_SOURCE[0]} = $0 ]] && print_256_colors "$@"
+return 2>/dev/null
+
+print_256_colors "$@"
