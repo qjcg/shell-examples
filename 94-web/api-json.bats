@@ -1,6 +1,6 @@
 #!/usr/bin/env bats
 
-cmd=./json-api-interaction
+cmd=./api-json
 
 @test "prints 10 lines of output" {
 	run $cmd
