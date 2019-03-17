@@ -6,7 +6,9 @@ shift
 comment=$*
 author='Jerry Q. Hacker'
 
-echo '#!/bin/bash' > $script_name
-echo "# $comment" >> $script_name
-echo "# © $author $(date +%Y)" >> $script_name
-chmod u+x $script_name
+cat <<!
+#!/usr/bin/env bash
+# $comment
+# © $author $(date +%Y)
+
+!

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Example of case-statement usage
+# Example of case-statement usage.
 
 language=$1
 
