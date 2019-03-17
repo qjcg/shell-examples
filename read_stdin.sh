@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
-# Example script that transforms text read from stdin
-
-# Example invocation of this script:
-#	capitalize-and-reverse-stdin.sh < /etc/passwd
+# Example script that transforms text read from stdin.
 
 while read line; do
-	echo $line | tr a-z A-Z | rev
-done < /dev/stdin
+	echo "$line" | tr a-z A-Z | rev
+done
