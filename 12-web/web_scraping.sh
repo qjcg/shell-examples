@@ -1,7 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Demo of simple web scraping via shell script.
 
-hash pup 2>/dev/null || { >&2 echo 'You must install pup: https://github.com/ericchiang/pup/releases/latest' ; exit 1; }
+command -v pup >/dev/null || { >&2 echo 'The pup command is required: https://github.com/ericchiang/pup/releases/latest' ; exit 1; }
 
-site_to_scrape="http://www.vigilantglobal.com"
+site_to_scrape="https://www.google.com/"
 curl -s $site_to_scrape | pup 'img attr{src}'
