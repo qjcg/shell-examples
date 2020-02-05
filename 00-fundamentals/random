@@ -1,0 +1,10 @@
+#!/bin/bash
+
+low=10
+high=20
+
+# display a random integer <= 20
+echo $(( r %= 20 ))
+
+# display random number between 10 and 20.
+echo $((RANDOM%$high+$low))
